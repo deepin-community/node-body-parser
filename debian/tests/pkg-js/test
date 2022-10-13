@@ -1,0 +1,1 @@
+mocha --require test/support/env --reporter spec --check-leaks --bail test/

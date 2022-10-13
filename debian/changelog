@@ -1,0 +1,92 @@
+node-body-parser (1.19.0-5) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Modernize debian/watch
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+
+ -- Yadd <yadd@debian.org>  Sat, 23 Oct 2021 08:20:21 +0200
+
+node-body-parser (1.19.0-4) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 15 Sep 2021 10:46:47 +0100
+
+node-body-parser (1.19.0-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 29 Aug 2021 00:18:36 +0100
+
+node-body-parser (1.19.0-2) unstable; urgency=medium
+
+  * Require node-supertest ≥ 4.0.2 (fixes debci)
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 21 Dec 2019 11:57:22 +0100
+
+node-body-parser (1.19.0-1) unstable; urgency=medium
+
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Switch test and install to pkg-js-tools
+  * New upstream version 1.19.0
+  * Refresh patch
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 28 Oct 2019 13:50:02 +0100
+
+node-body-parser (1.18.3-2) unstable; urgency=medium
+
+  * Declare compliance with policy 4.3.0
+  * Replace Andrew by myself in uploaders list. Thanks for your work
+    (Closes: #909868)
+  * Remove unneeded dependency versions
+  * Add upstream/metadata
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 25 Jan 2019 11:36:15 +0100
+
+node-body-parser (1.18.3-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 19 Jun 2018 21:33:19 +0200
+
+node-body-parser (1.18.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Bump compat and policy
+  * Improve rules
+  * Improve cli
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 10 May 2018 15:54:36 +0200
+
+node-body-parser (1.8.1-1) unstable; urgency=low
+
+  * Update to upstream 1.8.1
+  * Simpler autopkgtest
+  * Refresh iconv patch
+  * Add dependency on node-on-finished
+
+ -- Andrew Kelley <superjoe30@gmail.com>  Fri, 12 Sep 2014 10:14:19 +0200
+
+node-body-parser (1.4.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #753332)
+
+ -- Andrew Kelley <superjoe30@gmail.com>  Sun, 06 Jul 2014 17:33:42 +0200

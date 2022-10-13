@@ -1,0 +1,49 @@
+Source: node-body-parser
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Yadd <yadd@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-buildinfo,
+               nodejs,
+               node-bytes <!nocheck>,
+               node-content-type <!nocheck>,
+               node-debug <!nocheck>,
+               node-depd <!nocheck>,
+               node-http-errors <!nocheck>,
+               node-iconv <!nocheck>,
+               node-on-finished <!nocheck>,
+               node-qs <!nocheck>,
+               node-raw-body <!nocheck>,
+               node-type-is <!nocheck>,
+               mocha <!nocheck>,
+               node-supertest (>= 4.0.2) <!nocheck>,
+               node-safe-buffer <!nocheck>,
+               dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-body-parser
+Vcs-Git: https://salsa.debian.org/js-team/node-body-parser.git
+Homepage: https://github.com/expressjs/body-parser
+Rules-Requires-Root: no
+
+Package: node-body-parser
+Architecture: all
+Depends: ${misc:Depends},
+         nodejs,
+         node-bytes,
+         node-content-type,
+         node-debug,
+         node-depd,
+         node-http-errors,
+         node-iconv,
+         node-on-finished,
+         node-qs,
+         node-raw-body,
+         node-type-is
+Description: body parsing middleware - Node.js module
+ body-parser is a Node.js module which provides connect middleware for parsing
+ HTTP request bodies. It supports JSON and urlencoded formats and does not
+ support multipart requests.
+ .
+ Node.js is an event-based server-side JavaScript engine.
