@@ -1,46 +1,48 @@
 Source: node-body-parser
+Section: javascript
+Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Yadd <yadd@debian.org>
-Section: javascript
-Testsuite: autopkgtest-pkg-nodejs
-Priority: optional
-Build-Depends: debhelper-compat (= 13),
-               dh-buildinfo,
-               nodejs,
-               node-bytes <!nocheck>,
-               node-content-type <!nocheck>,
-               node-debug <!nocheck>,
-               node-depd <!nocheck>,
-               node-http-errors <!nocheck>,
-               node-iconv <!nocheck>,
-               node-on-finished <!nocheck>,
-               node-qs <!nocheck>,
-               node-raw-body <!nocheck>,
-               node-type-is <!nocheck>,
-               mocha <!nocheck>,
-               node-supertest (>= 4.0.2) <!nocheck>,
-               node-safe-buffer <!nocheck>,
-               dh-sequence-nodejs
-Standards-Version: 4.6.0
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+ , node-bytes <!nocheck>
+ , node-content-type <!nocheck>
+ , node-debug <!nocheck>
+ , node-depd <!nocheck>
+ , node-http-errors <!nocheck>
+ , node-iconv-lite <!nocheck>
+ , node-on-finished <!nocheck>
+ , node-qs <!nocheck>
+ , node-raw-body <!nocheck>
+ , node-safe-buffer <!nocheck>
+ , node-supertest (>= 4.0.2) <!nocheck>
+ , node-type-is <!nocheck>
+ , node-destroy <!nocheck>
+ , node-unpipe <!nocheck>
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-body-parser
 Vcs-Git: https://salsa.debian.org/js-team/node-body-parser.git
 Homepage: https://github.com/expressjs/body-parser
+Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: node-body-parser
 Architecture: all
-Depends: ${misc:Depends},
-         nodejs,
-         node-bytes,
-         node-content-type,
-         node-debug,
-         node-depd,
-         node-http-errors,
-         node-iconv,
-         node-on-finished,
-         node-qs,
-         node-raw-body,
-         node-type-is
+Depends: ${misc:Depends}
+ , node-bytes
+ , node-content-type
+ , node-debug
+ , node-depd
+ , node-destroy
+ , node-http-errors
+ , node-iconv-lite
+ , node-on-finished
+ , node-qs
+ , node-raw-body
+ , node-type-is
+ , node-unpipe
+Provides: ${nodejs:Provides}
 Description: body parsing middleware - Node.js module
  body-parser is a Node.js module which provides connect middleware for parsing
  HTTP request bodies. It supports JSON and urlencoded formats and does not

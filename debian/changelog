@@ -1,3 +1,51 @@
+node-body-parser (1.20.2+~1.19.5-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.20.2+~1.19.5
+  * debian/copyright: use spaces rather than tabs to start continuation lines.
+  * Update standards version to 4.6.2, no changes needed.
+
+ -- Godwin Nweke <nwekegodwin65@gmail.com>  Thu, 16 Nov 2023 16:17:28 +0000
+
+node-body-parser (1.20.1+~1.19.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ sandra uwah ]
+  * New upstream version 1.20.1+~1.19.2
+  * bumped up standard version to 4.6.1
+  * update copyright to 2022
+  * Fix lintian override error
+
+  [ Yadd ]
+  * Set upstream metadata fields: Security-Contact
+
+ -- sandra uwah <sandrauwah282@gmail.com>  Wed, 12 Oct 2022 18:01:51 +0000
+
+node-body-parser (1.20.0+~1.19.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.20.0+~1.19.2
+  * Added new dependencies from package.json
+
+ -- Israel Galadima <izzygaladima@gmail.com>  Fri, 08 Apr 2022 10:26:51 +0000
+
+node-body-parser (1.19.2+~1.19.2-1) unstable; urgency=medium
+
+  * New upstream version 1.19.2+~1.19.2
+
+ -- Yadd <yadd@debian.org>  Sat, 19 Feb 2022 13:02:21 +0100
+
+node-body-parser (1.19.1+~1.19.2-1) unstable; urgency=medium
+
+  * Drop dependency to nodejs
+  * Embed typescript declarations (Closes: #1004889)
+  * New upstream version 1.19.1+~1.19.2
+  * Replace dependency to node-iconv by dependency to node-iconv-lite and drop
+    related patch
+
+ -- Yadd <yadd@debian.org>  Thu, 03 Feb 2022 06:13:46 +0100
+
 node-body-parser (1.19.0-5) unstable; urgency=medium
 
   [ Debian Janitor ]
